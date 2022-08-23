@@ -1,36 +1,17 @@
-# StyleGAN of All Trades: Image Manipulation with Only Pretrained StyleGAN
-![](teaser.jpg)
-
-This is the PyTorch implementation of [StyleGAN of All Trades: Image Manipulation with Only Pretrained StyleGAN](https://arxiv.org/abs/2111.01619). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mchong6/SOAT/blob/main/infinity.ipynb)
-
-**Web Demo**
-Integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). See demo for Panorama Generation for Landscapes: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/SOAT)
-
->**Abstract:**<br>
-Recently, StyleGAN has enabled various image manipulation and editing tasks thanks to the high-quality generation and the disentangled latent space. However, additional architectures or task-specific training paradigms are usually required for different tasks. In this work, we take a deeper look at the spatial properties of StyleGAN. We show that with a pretrained StyleGAN along with some operations, without any additional architecture, we can perform comparably to the state-of-the-art methods on various tasks, including image blending, panorama generation, generation from a single image, controllable and local multimodal image to image translation, and attributes transfer.
 
 
-## How to use
-Everything to get started is in the [colab notebook](https://colab.research.google.com/github/mchong6/SOAT/blob/main/infinity.ipynb).
+##
 
-## Toonification
-For toonification, you can train a new model yourself by running
-```bash
-python train.py
-```
-For disney toonification, we use the disney dataset [here](https://github.com/justinpinkney/toonify). Feel free to experiment with different datasets.
+빵형의 개도국에 나온 영상을 따라 하면서 주석과 일부 오류 정정하였음.
+개인적 무지와 호기심을 해결하고자 몇가지 실험적 시도도 해 보았음.
 
-## GAN inversion
-To perform GAN inversion with gaussian regularization in W+ space,
-```bash
-python projector.py xxx.jpg
-```
-the code will be saved in ./inversion_codes/xxx.pt which you can load by
-```python
-source = load_source(['xxx'], generator, device)
-source_im, _ = generator(source)
+자세한 내용은 
+https://u2pia.notion.site/PreTrained-StyleGAN2-aa37dab586a04ab7a61a562559c68dd7
+를 참고하시고..
+toonify.ipynb 파일의 내용에 주석으로 달아 놓았으니 참고 바람.
 
-```
+
+모든 영광은 아래 원 저자와 빵형에게 있음.
 
 ## Citation
 If you use this code or ideas from our paper, please cite our paper:
