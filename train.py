@@ -359,7 +359,7 @@ if __name__ == "__main__":
     parser.add_argument("--d_reg_every", type=int, default=16)
     parser.add_argument("--g_reg_every", type=int, default=4)
     parser.add_argument("--mixing", type=float, default=0.9)
-    parser.add_argument("--ckpt", type=str, default='face.pt')
+    parser.add_argument("--ckpt", type=str, default='./models/face-pt.pt')
     #parser.add_argument("--ckpt", type=str, default='/home/mchong6/stylegan2-pytorch/stylegan2-ffhq-config-f.pt')
     parser.add_argument("--lr", type=float, default=0.002)
     parser.add_argument("--channel_multiplier", type=int, default=2)
@@ -465,7 +465,7 @@ if __name__ == "__main__":
     os.makedirs(f'checkpoint_{args.dataset}', exist_ok=True)
     os.makedirs(f'sample_{args.dataset}', exist_ok=True)
 
-    dataset = ImageFolder('./cartoon', transform)
+    dataset = ImageFolder('./datasets/cartoon', transform)
     loader = data.DataLoader(
         dataset,
         batch_size=args.batch,
