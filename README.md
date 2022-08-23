@@ -2,16 +2,18 @@
 
 ##
 
-빵형의 개도국에 나온 영상을 따라 하면서 주석과 일부 오류 정정하였음.
-개인적 무지와 호기심을 해결하고자 몇가지 실험적 시도도 해 보았음.
+빵형의 개도국에 나온 영상을 따라 하면서 주석을 달아가면서 몇 가지 실험적 시도 + 일부 오류 정정함.
 
 자세한 내용은 
+
 https://u2pia.notion.site/PreTrained-StyleGAN2-aa37dab586a04ab7a61a562559c68dd7
+
 를 참고하시고..
-toonify.ipynb 파일의 내용에 주석으로 달아 놓았으니 참고 바람.
+
+toonify.ipynb 파일의 내용에 주석으로 달아 놓았습니다.
 
 
-모든 영광은 아래 원 저자와 빵형에게 있음.
+모든 영광은 아래 원 저자와 빵형에게 있습니다.
 
 ## Citation
 If you use this code or ideas from our paper, please cite our paper:
